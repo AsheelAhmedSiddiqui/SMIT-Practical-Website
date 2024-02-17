@@ -30,6 +30,15 @@ nav ul li a:hover {
   color: #6059f6;
 }
 
+body button {
+  transition: all 0.5s;
+  cursor: pointer;
+}
+
+body button:hover {
+  background-color: #201aa3;
+}
+
 /* Header Section design */
 header {
   padding: 2rem 0;
