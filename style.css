@@ -81,6 +81,10 @@ nav ul li a {
   font-size: 1.5rem;
 }
 
+.color-red {
+  color: red;
+}
+
 /* Hero section  */
 .hero {
   padding: 6rem 0;
