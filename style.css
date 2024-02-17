@@ -42,6 +42,11 @@ body button:hover {
 /* Header Section design */
 header {
   padding: 2rem 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: #fafaff;
 }
 
 .navbar {
@@ -87,7 +92,7 @@ nav ul li a {
 
 /* Hero section  */
 .hero {
-  padding: 6rem 0;
+  padding: 8.5rem 0;
 }
 
 .hero-container {
@@ -231,8 +236,12 @@ nav ul li a {
 .tour-container {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  column-gap: 2rem;
+  gap: 2rem;
   align-items: center;
+}
+
+.tour-container img {
+  width: 100%;
 }
 
 .tour-content {
@@ -248,6 +257,41 @@ nav ul li a {
 .tour-content p {
   font-size: 1.5rem;
   margin-bottom: 1.6rem;
+}
+
+/* Testimonial Section */
+.testimonial {
+  padding: 6rem 0;
+  background-color: #f8f8ff;
+}
+
+.grid-two {
+  display: grid;
+  grid-template-columns: 0.5fr 2fr;
+  gap: 2rem;
+  width: 80rem;
+  margin: 0 auto;
+  align-items: center;
+  padding: 3rem 5rem;
+  background-color: #fff;
+  margin-top: 9rem;
+  margin-bottom: 4rem;
+  border-radius: 20px;
+}
+
+.grid-two h5 {
+  font-size: 2rem;
+  color: #2a2a2a;
+}
+
+.grid-two span {
+  font-size: 1.4rem;
+  display: block;
+  margin-bottom: 1rem;
+}
+
+.grid-two p {
+  font-size: 1.5rem;
 }
 
 /* footer Section */
@@ -288,20 +332,29 @@ footer {
   color: #6059f6;
 }
 
+.footer-item form {
+  display: flex;
+  align-items: center;
+}
+
 .footer-item form input[type="email"] {
   padding: 0.5rem 0.4rem;
   background-color: transparent;
   border: 1px solid #888888;
   color: #888888;
   border-radius: 2px;
+  outline: none;
 }
 
 .footer-item form input[type="button"] {
-  padding: 0.7rem 0.3rem;
+  padding: 0.6rem 0.3rem;
   color: #fff;
   background-color: #6059f6;
   border: none;
-  border-radius: 2px;
+  border-top-right-radius: 2px;
+  border-bottom-right-radius: 2px;
+  outline: none;
+  /* margin-left: -0.4rem; */
 }
 
 .small-grid {
